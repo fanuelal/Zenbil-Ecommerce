@@ -21,9 +21,9 @@ But at this time this project can be used for the online certifying platforms to
 # File description
 - _index.html_ -> simple web page for the langing page of the project. [Visit](https://fanuelal.github.io/Blenx/)
 - _zenbil
-  - _Css_ -> GUI design of project 
-  - _img_ -> kivy source file for the _Blenx_GUI.py_
-  - _js_ -> capture the user data and store with their name and ID
+  - _Css_ -> All styles appear here
+  - _img_ -> The immage files here
+  - _js_ -> Script appears here
 
 
 
