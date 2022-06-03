@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Zenbil</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/animate.css" />
+    <link rel="stylesheet" href="./css/assets/fa/all.css" />
+    <link rel="stylesheet" href="./css/assets/fa/all.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+    <script src="./js/modernizr-3.5.0.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity=  "sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>-->
+<script src="./js/jquery.min.js"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>-->
+<script src="./js/bootstrap.min.js"></script>
+<!--<script src="https://use.fontawesome.com/8e45396e2e.js"></script>-->
+<script src="./js/fontawesome.js"></script>
+<script src="./js/jquery.waypoints.min.js"></script>
+<script src="./js/animate.js"></script>
+<script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+<scrip src="./js/scroll-out.js"></scrip>
+<script type="text/javascript">
+function topScroll(){
+    document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0; 
+}
+
+function loginPopup(){
+    var loginpop = document.getElementById("logincontainer");
+    var bgdiseabel = document.getElementById("bgdiseabel");
+    loginpop.style.visibility = 'visible';
+    bgdiseabel.style.visibility ='visible';
+}
+function closePopups(){
+            var loginpop = document.getElementById("logincontainer");
+            var bgdiseabel = document.getElementById("bgdiseabel");
+            loginpop.style.visibility = 'hidden';
+            bgdiseabel.style.visibility ='hidden';
+        }
+window.onscroll = function() {scrollFunction()};
+function scrollFunction(){
+    var headeMenu = document.getElementById("HeaderMenu");
+    var brand = document.getElementById("brand");
+    var nav = document.getElementsByClassName("headernav");
+    var ulist = document.getElementById("ulist");
+    var top = document.getElementById("top");
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        top.style.visibility = 'visible';
+    }
+    else{
+        top.style.visibility = 'hidden';
+    }
+    if(document.body.scrollTop > 5 || document.documentElement.scrollTop > 5){
+        brand.style.display= "none";
+        headeMenu.style.position = 'sticky';
+        headeMenu.style.height = "70px";
+        headeMenu.style.top = 0; 
+        headeMenu.style.background = "linear-gradient(55deg, #1e8bf1 10%, #1fc8db 51%, #2cb5e8 85%)";
+        
+    }
+    else{
+        brand.style.display = "block"; 
+        headeMenu.style.position = 'relative';
+        headeMenu.style.height = "140px";
+        headeMenu.style.background = "rgba(30,144,255,0.4)";
+        
+    }   
+}
+
+        
+    </script>
+
+</head>
+<body>
+    <div class="homePage">
+    <div id="HeaderMenu" height="300">
+    <h1 id="brand">Zenbil<img src="./img/logo/logo.png"></h1>
+    <header>
+    <nav class="headernav">  
+        <ul id="ulist">   
+        <a href="#" class="active"><li id="home" class="list">Home &nbsp<i id="homeicon" class="fas fa-home" ></i></li></a>
+        <a href="shop"><li id="shop" class="list">Shop &nbsp<i id="shopicon" class="fas fa-store"></i></li></a>
+        <a href="shop"><li id="shop" class="list">Work &nbsp<i id="shopicon" class="fas fa-wallet"></i></li></a>
+        <a href="#supportpage" class="list"><li id="support">Support &nbsp<i id="supporticon" class="fas fa-headset"></i></li></a>
+        </ul>
+        <input type="text" name="search" placeholder="Search..."><button class="search" type="submit"><i class="fas fa-search"></i></i></button>
+        <div class="login" onclick="loginPopup()">LOGIN</div>
+        <div class="reg" onclick="loginpopup()"">REGISTER</div>
+    </nav>
+    </header>
+</div>
+<div class="main_div">
+    <div class="quote">
+    <h1>Wellcome to our site</h1>
+   <h2> Buying or working with us</br>making your life easier</h2>
+   <p><center>I want to </center></p>
+    <button class="buy">Buy</button>
+    <button class="work">Work</button>
+</div>
+<div id="bgdiseabel" onclick="closePopups()"></div>
+
+    <div id="logincontainer" class="animate__zoomInDown">
+        <i class="fas fa-times close" id="closer" onclick="closePopups()"></i>
+        <form action="#" method="POST">
+           <center> <p class="title">LOGIN<span class="fas fa-user" style="size: 100px;"></span></p></center>
+            <input type="text" name="username" class="input" placeholder="" required>
+            <lable class="unametext">Phone number/Email </lable>
+            <input type="password" name="password" class="input" placeholder="" required></br>
+            <lable class="passtext">password</lable>
+            <input type="submit" value="LOGIN" class="submit">
+        <p class="forget">forgot password?<a href="#">Click here</a></p>
+    </form>
+    </div>
+   <div class="arrow">
+    <div class="shopping">
+   <!-- <i class="far fa-arrow-alt-circle-right"></i>-->
+   </div>
+</div>
+<div id="supportpage" name="supportpage">
+    <h1> Why you need to creat account?</h1>
+    <h3>If you are</h3>
+<div class="supcontianer">
+    <div class="buyer">Buyer
+        <p>
+        We don't ask your payment account frequently. If you want to buy and also your location will set once so the 
+        our delivery goes on that location until you change you address.Our platform gives your 
+        favorite items overtime  <br>
+            </p> 
+            <button class="detailogin">LOGIN</button>
+            <button class="detail">REGISTER</button>
+    </div>
+    <div class="seller">Seller
+        <p>
+        helps to give you favorite items to shop<br>
+        we will not asked every time to give your payment information<br>
+        also to get your location for delivery<br>
+         </p>
+         <button class="detailogin">LOGIN</button>
+         <button class="detail">REGISTER</button>
+    </div>
+    <div class="worker">Worker
+        <p>
+            we don't ask your payment account frequently. If you want to buy and also your location will set once so the 
+            our delivery goes on that location until you change you address.Our platform gives your 
+            favorite items overtime <br>
+         </p>
+         <button class="detailogin">LOGIN</button>
+         <button class="detail">REGISTER</button>
+    </div>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".buyer"), {
+        max: 25,
+        speed: 400
+    });
+    VanillaTilt.init(document.querySelectorAll(".seller"), {
+        max: 25,
+        speed: 400
+    });
+    VanillaTilt.init(document.querySelectorAll(".worker"), {
+        max: 25,
+        speed: 400
+    });
+    VanillaTilt.init(document.querySelectorAll(".quote"), {
+        max: 25,
+        speed: 400
+    });
+    
+    </script>
+    <script type="text/javascript">
+    ScrollOut({
+        targets: 'div,footer'
+    })
+    </script>
+    <div id="top" onclick="topScroll()">^</div>
+<footer id="footer">
+    <div class="socialmedias">
+        <i class="fab fa-facebook-f" title="Facebook"></i>
+        <i class="fab fa-twitter" title="Twitter"></i>
+        <i class="fab fa-instagram" title="Instagram"></i>
+        <i class="fab fa-github" title="Githun"></i>
+        <i class="fab fa-youtube" title="Youtube"></i>
+    </div> 
+    <div class="contact">contact us</div>
+    <div class="about">About</div>
+    <div class="copyright">&copy; 2020, ZenBil</div>
+</footer>
+</div>  
+</body>
+</html>

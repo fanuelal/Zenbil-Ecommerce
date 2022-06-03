@@ -1,0 +1,606 @@
+*{
+    margin:0;
+    padding:0;
+    scroll-behavior: smooth;    
+}
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    background-color: dodgerblue;
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    background-position: center;
+    animation: 100s slider ease-in-out infinite;
+    transition: all 0.5s; 
+}
+@keyframes slider{
+    0%{
+        background-image: url(../img/wall/2.jpg);
+    }
+    25%{
+        background-image: url(../img/wall/pexels-bess-hamiti-35188.jpg);
+    }
+    50%{
+        background-image: url(../img/wall/pexels-mnz-1619651.jpg);
+    }
+    75%{
+        background-image: url(../img/wall/pexels-pixabay-4158.jpg);
+    }
+    100%{
+        background-image: url(../img/wall/pexels-skitterphoto-9295.jpg);
+    }
+}
+#HeaderMenu {
+    background:  rgba(30,144,255,0.4);
+    width: 100%;
+    z-index: 99;
+    transition: all 0.5s;
+    align-items: center;
+}
+
+#HeaderMenu h1{
+    color: white;
+    font-weight: bold;
+    padding:5px 40%;
+    text-transform: uppercase;
+    transition: all 0.5s;
+    
+}
+#HeaderMenu h1 img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top:-15px;
+    left: 52%;
+    
+}
+.headernav{
+    display: flex;
+    justify-content: space-between; 
+    font-weight: bold;
+    z-index: 999;
+}
+.headernav ul{
+    list-style: none;
+    display: flex;
+    position: sticky;
+    padding-left: 0.4em;
+    padding-top: 20px;
+    transition: all 0.5s;
+}
+.headernav li{
+    text-transform: uppercase;
+    text-decoration: none;
+    color : #34495e;
+    padding-right: 1.5em;
+    padding-top: 15px; 
+    height: 50px;
+    padding-left: 1.5em;
+
+}
+.headernav input{
+    width: 130px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin: 1% 70%;
+    outline: none;
+    font-size: 17px;
+    position: absolute;
+}
+.search{
+    position: absolute;
+    background: none;
+    border: none;
+    margin: 1% 76.9%;
+    height: 50px;
+    font-size: 25px;
+    width: 40px;
+    color: whitesmoke;
+    outline: none;
+    background-color: #34495e;
+    border-top-right-radius: 10px; 
+    border-bottom-right-radius: 10px;
+    box-shadow: inset 0 0 0 0 white; 
+}
+.search:hover{
+    box-shadow: inset 300px 0 0 0 rgb(231, 231, 231);
+    color:#34495e;
+
+    transition: all 0.3s ease-in-out;
+}
+.headernav input:focus{
+    margin: 1% 57.4%;
+    width: 300px;
+    font-size: 20px;
+    transition: all 0.6s ease-in-out;
+}
+
+.headernav a{
+    text-decoration: none;
+    padding-left: 5px;
+    height:50px;
+}
+.headernav li:hover::after{
+    width: 80px;
+    height: 0.2em;
+}
+.headernav li:hover{
+    color: white;  
+    transition: all ease-in-out 0.5s;
+}
+.headernav li::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0.2em;
+    background-color:white;
+    bottom: 0em;
+    transition: all ease-in-out 0.5s;
+}
+.login, .reg{
+    outline: none;
+    width: 100px;
+    height: 50px;
+    border: none;
+    position: absolute;
+    background:#34495e;
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding-top: 15px;
+    float: right;
+    z-index: auto;
+    border-radius: 15px;
+    box-shadow: inset 0 0 0 0 white;
+}
+.login:hover, .reg:hover{
+    box-shadow: inset 300px 0 0 0 white;
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+    color:black;
+}
+.login{margin: 1% 81%;}
+.reg{margin: 1% 90%;}
+.main_div{
+    width: 100%;
+    height: 255vh;
+    border: none;
+    position: relative;
+    margin-top: 0%;
+    color:white;
+    font-weight: 200;
+    padding-top: 6%;
+    padding-left: 9em;
+    font-size: 25px;
+    background: rgba(35, 58, 82, 0.2);
+    align-items: center;
+}
+.quote{
+    background: rgba(0,0,0,0.5);
+    width:700px;
+    height: 250px;
+    border-radius: 10px;
+}
+.quote button,.quote p{
+    left: 40px;
+}
+
+.main_div h1{
+    padding-left: 4em;
+    margin-top: 5%;
+    font-size: 40px; 
+}
+.main_div h2{
+    padding-left: 8em;
+    max-width: 100%;
+    font-size: 20px;
+    letter-spacing: 4px;   
+}
+
+.buy,.work{
+    position: relative;
+    border: white 2px solid;
+    background: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    color: white;
+    outline: none;
+}
+#bgdiseabel{
+    background: rgba(53, 53, 53, 0.9);
+    width: 100%;
+    height: 200vh;
+    z-index: 999;
+    position: fixed;
+    top: -150px;
+    left:0;
+   visibility: hidden;
+}
+#logincontainer{
+    position: fixed;
+    background:rgba(0, 0, 0, 1);
+    color:white;
+    width: 460px;
+    min-height: 300px; 
+    top: 35%;
+    left: 30%;
+    padding: 50px;
+    visibility: hidden;
+    z-index: 999;
+    animation: 0.5s zoomInDown ease-in;
+}
+#logincontainer::before{
+content:'';
+position: absolute;
+top:0;
+left:0;
+width: 50%;
+height: 100%;
+background: rgba(225,225, 225, 0.1);
+pointer-events: none;
+z-index: 2;
+}
+#logincontainer::after{
+    content:'';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    bottom: -5px;
+    right: -5px;
+    z-index:-2;
+    background: linear-gradient(45deg,#33f1d8,#2793ff);
+    animation: animate 7s ease-in-out infinite;
+}
+#logincontainer .title{
+  font-weight: 500;
+}
+@keyframes animate{
+    0%{
+        filter: blur(60px) hue-rotate(0deg);
+    }
+    100%{
+        filter: blur(60px) hue-rotate(90deg);
+    }
+}
+.close{
+    position: absolute;
+    font-size: 20px;
+    left: 90%;
+    top: 5px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 100%;
+    text-align: center;
+    align-items: center;
+    padding: 3px;
+    display: block;
+    z-index: 999;
+}
+.close:hover{
+    background:white;
+    transition: background 0.3s;
+}
+#logincontainer .input{
+    width: 350px;
+    height: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-bottom: 2px solid #fff;
+    font-size: 16px;
+    outline: none;
+    background: transparent;
+    top: -20px;
+    z-index: 999;
+}
+#logincontainer input[type="text"]{
+    font-weight: 400;
+    font-size: 20px;
+}
+#logincontainer .submit{
+    border: white 2px solid;
+    background: none;
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+    color: white;
+    outline: none;
+    top: 20px;
+    left: 30px;
+    position: relative;
+}
+#logincontainer input[type="password"]:focus ~ .passtext{
+ top:44%;
+ left: 4em;
+ font-size: 13px;
+ transition:all 0.3s ease-in-out;
+}
+#logincontainer input[type="text"]:focus ~ .unametext{
+    top:31%;
+    left: 4em;
+    font-size: 13px;
+    transition:all 0.3s ease-in-out;
+}
+.unametext,.passtext{
+    font-size: 18px;
+    letter-spacing: 2px;
+    padding: 0;
+    color:rgb(209, 208, 208)
+}
+.unametext{position:absolute; top:34%;  left: 3em;z-index:-1;}
+.passtext{position: absolute;top:46%;left: 3em;z-index:-1;}
+.forget{
+    color:white;
+    font-size: 15px;
+    position: relative;
+    top: 50px;
+    left: 40px;
+    cursor: pointer;
+}
+.forget a{
+    color: white;
+}
+#logincontainer .submit:hover{
+color: #34495e;
+box-shadow: inset 300px 0 0 0 white;
+transition: all 0.5s ease-in-out;
+}
+.buy:hover,.work:hover{
+    color: #34495e;
+    box-shadow: inset 300px 0 0 0 white;
+    transition: all 0.5s ease-in-out;
+
+}
+.arrow{
+    position: absolute;
+}
+#supportpage{
+    position: absolute;
+    margin: 30% -16.7%;
+    background: linear-gradient(55deg, #1e8bf1 10%, #1fc8db 51%, #2cb5e8 85%);
+    width: 100%;
+    height: 100vh;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(1);
+    
+}
+
+#supportpage h1{
+    padding-top:0.5em;
+    padding-left: 10em;
+    color: white;
+    font-weight: 500;
+}
+#supportpage h3{
+    font-size: 20px;
+    letter-spacing: 5px;
+    padding-left:1.3em;
+    position: absolute;
+}
+.supcontianer button{
+    position: relative;
+    border: white 2px solid;
+    background: none;
+    border-radius: 10px;
+    width: 130px;
+    height: 30px;
+    color: white;
+    outline: none;
+    font-size: 15px;
+    bottom: 10px;
+}
+.supcontianer button:hover{
+    box-shadow: inset 100px 0 0 0 #34495e;
+    color: #1e8bf1;
+    transition: all 0.5s ease-in-out;  
+}
+.buyer:hover button,.seller:hover button,.worker:hover button{
+    border: #34495e 2px solid;
+    color:#34495e;
+    transform: translateY(-40px);
+    transition: all 0.3s ease-in-out;
+
+}
+.buyer,.seller,.worker{
+   display: inline-block;
+    max-width: 300px;
+    height: 320px;
+    background: rgba(0,0,0,0.3);
+    border-radius: 20px;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+.buyer p,.seller p,.worker p {
+    padding: 40px 20px;
+    font-size: 15px;
+    text-align:left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.buyer:hover p,.seller:hover p,.worker:hover p{
+    font-size: 17px;
+    font-weight: 200;
+    transform: translate3D(10px);
+    transition: all 0.3s ease-in-out;
+}
+.buyer:hover,.seller:hover,.worker:hover{
+    background: whitesmoke;
+    color:#34495e;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    transition:all 0.3s ease-in-out;
+}
+.supcontianer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-left: 2em;
+    padding-right: 1.5em;
+    padding-top: 50px;
+}
+.active::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 0.2em;
+    background-color:white;
+    bottom: 0em;
+    left:2em;
+    transition: all ease-in-out 0.3s;
+    padding-left: -30px;
+}
+.active li{
+    color:white;
+}
+.shopping{
+    float:right;
+    letter-spacing:4px;
+    font-family: normal;
+    font-size: 80px;
+    float:right;
+}
+footer{
+    background-color: rgba(0,0,0,0.5);
+    max-width: 100%;
+    position: absolute;
+    width:100%;
+    height: 15vh;
+    color:white;
+    left:0;
+    bottom: -180%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    font-weight: 500;
+}
+.socialmedias{   
+    display: inline-flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.socialmedias i{
+    text-align: center;
+    font-size: 25px;
+    background:rgb(231, 231, 231);
+    color: #34495e;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius:100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+.socialmedias i:nth-child(1):hover{
+    background:blue;
+    color:white;
+    transition: all 0.5s ease-in-out;
+}
+.socialmedias i:nth-child(2):hover{
+    background:#00acee;
+    color:white;
+    transition: all 0.5s ease-in-out;
+}
+.socialmedias i:nth-child(3):hover{
+    background: #bc2a8d;
+    color:white;
+    transition: all 0.5s ease-in-out;
+}
+.socialmedias i:nth-child(4):hover{
+    background:#6b6b6b;
+    color:white;
+    transition: all 0.5s ease-in-out;
+}
+.socialmedias i:nth-child(5):hover{
+    background:red;
+    color:white;
+    transition: all 0.5s ease-in-out;
+}
+.contact{
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+.about{
+    font-size: 17px;
+    font-weight: 400;
+    text-transform: uppercase; 
+    cursor:pointer;
+    top:10px;
+}
+#top{
+    width:40px;
+    height: 40px;
+    text-align: center;
+    line-height: 45px;
+    position: fixed;
+    background:rgba(0,0,0,0.5);
+    color: white;
+    font-size: 18px;
+    right: 10px;
+    bottom:40px;
+    border-radius: 5px;
+    font-weight: 700;
+    visibility: hidden;
+    z-index:999;
+    outline: none;
+    cursor:pointer;
+}
+#top:hover{
+    background:rgba(0,0,0,0.9);
+    line-height: 35px;
+    transition: all 0.5s ;
+}
+.copyright{
+    font-size: 16px;
+    color: rgb(199, 199, 199);
+}
+#home:hover #homeicon,#shop:hover #shopicon,#support:hover #supporticon{
+    size: 40px;
+    animation: rubberBand 1s ease-in-out;
+}
+.supcontianeour p{
+    position: relative;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+}
+@media only screen and (max-width: 900px) {
+    body{
+        background-size: cover;
+    }
+    #HeaderMenu{
+        margin:0;
+        padding: 0;
+        width: 100%;
+    }
+    .headernav ul{
+        display: none;
+        content:"menu";
+    }
+    .headernav input{
+        margin: 1% 40%;
+    }
+    .headernav input:focus{
+    margin: 1% 20.4%;}
+    .search{
+    margin: 1% 50%;
+    }
+  }
