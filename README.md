@@ -40,7 +40,7 @@ I have also worked on  AI for implmenting by my self [visit](https://github.com/
  # Developers
  - Fanuel Almaw - 1207418
  - Kidist Mamaye - 1207423
- - Mesafint - 
+ - Mesafint Getahun  - 1109951
  
  # Abou Developer
  - I'm a Software Engineer and also software engineering student at ALX SE program.
