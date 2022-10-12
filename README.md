@@ -38,9 +38,7 @@ I have also worked on  AI for implmenting by my self [visit](https://github.com/
 # Landing page
 > [Here is the link](https://fanuelal.github.io/)
  # Developers
- - Fanuel Almaw - 1207418
- - Kidist Mamaye - 1207423
- - Mesafint Getahun  - 1109951
+ - Fanuel Almaw
  
  # Abou Developer
  - I'm a Software Engineer and also software engineering student at ALX SE program.
